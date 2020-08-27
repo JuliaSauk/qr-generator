@@ -7,13 +7,12 @@
 .header-basic {
 	background-color: #292c2f;
 	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
-	padding: 20px;
-	height: 80px;
+	padding: 12px 30px;
+	height: 45px;
 	box-sizing: border-box;
 }
 
 .header-basic .header-limiter {
-	max-width: 1800px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -23,15 +22,15 @@
 .header-basic .header-limiter h1 {
 	float: left;
   font-family: 'Montserrat', sans-serif;
-	line-height: 40px;
 	margin: 0;
 }
 
 /* The header links */
 
-.header-basic .header-limiter a {
+.header-basic .header-limiter {
 	color: #ffffff;
-	text-decoration: none;
+  text-decoration: none;
+  font-size: 8px
 }
 
 .header-basic .header-limiter nav{
@@ -60,31 +59,32 @@
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	padding: 35px;
+  padding: 12px 30px;
+  height: 45px;
 }
 
 .footer .footer-left p {
   font-family: 'Montserrat', sans-serif;
 	color:  #8f9296;
 	font-size: 17px;
-	margin: 0;
+  margin: 0;
+  float: left;
 }
 
 .footer .footer-right{
 	float: right;
-	margin-top: 6px;
 	max-width: 180px;
 }
 
 .footer .footer-right a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: 25px;
+	height: 25px;
 	background-color:  #33383b;
 	border-radius: 2px;
 	font-size: 20px;
 	text-align: center;
-	line-height: 35px;
+	line-height: 25px;
 	margin-left: 10px;
 }
 
