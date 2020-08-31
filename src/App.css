@@ -12,44 +12,59 @@
 	box-sizing: border-box;
 }
 
-.header-basic .header-limiter {
-	text-align: center;
-	margin: 0 auto;
-}
-
-/* Logo */
-
-.header-basic .header-limiter h1 {
+.header-basic h1 {
 	float: left;
   font-family: 'Montserrat', sans-serif;
-	margin: 0;
+  color: #ffffff;
+  margin: 0;
+  font-size: 20px;
+} 
+
+/*******************************************************/
+
+.body {
+  position: absolute;
+  top: 70;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
 
-/* The header links */
-
-.header-basic .header-limiter {
-	color: #ffffff;
-  text-decoration: none;
-  font-size: 8px
+.form-content{
+  display: flex;
+  flex-Direction: row;
+  justify-Content: center;
 }
 
-.header-basic .header-limiter nav{
-  font-family: 'Montserrat', sans-serif;
-	line-height: 40px;
-	float: right;
+.gen-form {
+  margin: auto;
+  max-width: 500px;
+  padding: 25px;
+  margin-top: 100px;
+  background: rgb(255, 255, 255, 0.2);
 }
 
-.header-basic .header-limiter nav a{
-	display: inline-block; 
-	padding: 0 5px;
-	text-decoration:none;
-	color: #ffffff;
-	font-size: 20px;
-	opacity: 0.9;
+.gen-form h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 20px;
+} 
+
+.wifi-input-container {
+  display: flex;
 }
 
-.header-basic .header-limiter nav a:hover{
-	opacity: 1;
+.wifi-input-container form p {
+  color: white;
+}
+
+.wifi-input-container form {
+  z-index: 2;
+}
+
+.qr-canvas {
+  margin: 25px;
+  display: flex;
 }
 
 /*******************************************************/
@@ -86,10 +101,4 @@
 	text-align: center;
 	line-height: 25px;
 	margin-left: 10px;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  column-width: 50%;
 }

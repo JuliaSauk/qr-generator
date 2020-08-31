@@ -1,11 +1,14 @@
 import React from 'react';
 import GenerationForm from './GenerationForm';
+import Particles from 'react-particles-js';
 
 export default function Body() {
     return (
-        <div style={{position: 'absolute', top: 70, textAlign: 'center', left: 0, right: 0}}>
+        <div class="body">
+            <div class="gen-form">
             <h1>Generate QR Code For Your Wi-Fi</h1>
-            <GenerationForm/>
+                <GenerationForm/>
+            </div>
         </div>
     );
 };
