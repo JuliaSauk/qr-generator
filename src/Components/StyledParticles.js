@@ -11,7 +11,7 @@ export const StyledParticles = () => {
             value: "#000000",
             },
         },
-        fpsLimit: 140,
+        fpsLimit: 160,
         interactivity: {
             detectsOn: "canvas",
             events: {
@@ -27,7 +27,7 @@ export const StyledParticles = () => {
             },
             modes: {
             bubble: {
-                distance: 400,
+                distance: 100,
                 duration: 2,
                 opacity: 0.8,
                 size: 40,
@@ -37,7 +37,7 @@ export const StyledParticles = () => {
             },
             repulse: {
                 distance: 200,
-                duration: 0.4,
+                duration: 0.5,
             },
             },
         },
@@ -47,7 +47,7 @@ export const StyledParticles = () => {
             },
             links: {
             color: "#ffffff",
-            distance: 150,
+            distance: 200,
             enable: true,
             opacity: 0.5,
             width: 1,

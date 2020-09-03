@@ -64,22 +64,28 @@ export default class GenerationForm extends Component {
         <div class="form-content">
             <div class="wifi-input-container">
                 <form>
-                    <p>Network Ssid:</p>
-                    <input type="text" name="network" value={this.state.ssid} onChange={e => this.onChangeSsid(e)}/>
-                    <p>Password:</p>
-                    <input type="text" name="password" value={this.state.password} onChange={e => this.onChangePassword(e)}/>
-                    <p>Connection Type:</p>
-                    <select onChange={(e) => this.onChageConnectionType(e)} value={this.state.connectionType}>
-                        <option value="WPA">WPA/WPA2</option>
-                        <option value="WEP">WEP</option>
-                        <option value="NONE">NONE</option>
-                    </select>
-                    <button style={{margin: '5px'}} onClick={(e) => this.onClickGenerate(e)}>Generate!</button>
+                    <div class="input-container">
+                        <label>Network Ssid:</label>
+                        <input type="text" name="network" value={this.state.ssid} onChange={e => this.onChangeSsid(e)}/>
+                    </div>
+                    <div class="input-container">
+                        <label>Password:</label>
+                        <input type="text" name="password" value={this.state.password} onChange={e => this.onChangePassword(e)}/>
+                    </div>
+                    <div class="input-container">
+                        <label>Connection Type:</label>
+                        <select onChange={(e) => this.onChageConnectionType(e)} value={this.state.connectionType}>
+                            <option value="WPA">WPA/WPA2</option>
+                            <option value="WEP">WEP</option>
+                            <option value="NONE">NONE</option>
+                        </select>   
+                    </div>
+                    <button class="btn" onClick={(e) => this.onClickGenerate(e)}>Generate</button>
+                    <button class="btn" disabled = {!this.state.imageURL}><a href={this.state.imageURL} download>Download</a></button>
                 </form>
             </div>
             <div class="qr-canvas">
-                <canvas ref={this.canvasRef}/>
-                {/* <button disabled = {!this.state.imageURL}><a href={this.state.imageURL} download>Download</a></button> */}
+                <canvas ref={this.canvasRef}/>    
             </div>
         </div>
       );

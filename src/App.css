@@ -24,8 +24,6 @@
 
 .body {
   position: absolute;
-  top: 70;
-  text-align: center;
   left: 0;
   right: 0;
 }
@@ -37,27 +35,40 @@
 }
 
 .gen-form {
+  margin: auto;
+  margin-top: 80px;
+  padding: 40px;
   width: 500px;
-  padding: 25px;
-  margin-top: 100px;
-  background: rgb(255, 255, 255, 0.2);
-  left: 35%;
   height: 352px;
-  position: absolute;
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
 
 .gen-form h1 {
-  color: #ffffff;
   margin: 0;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
 } 
 
 .wifi-input-container {
   display: flex;
 }
 
-.wifi-input-container form p {
+.wifi-input-container input{
+  margin: 10px;
+  margin-top: 0;
+  width: 160px;
+}
+
+.wifi-input-container select {
+  width: 160px;
+}
+
+.input-container label {
   color: white;
+  margin: 10px;
+  float: left;
 }
 
 .wifi-input-container form {
@@ -65,10 +76,45 @@
 }
 
 .qr-canvas {
-  margin: 25px;
+  margin: 15px;
   display: flex;
+  padding: 0; 
 }
 
+.btn {
+  width: 160px;
+  height: 30px;
+  display: inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  border-radius:0.22em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight: 300;
+  color:#FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: rgb(0, 0, 0, 0.1);
+  margin: 15px;
+  margin-bottom: 0;
+}
+
+.btn a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn a:hover{
+  color: #000000;
+}
+
+.btn:hover{
+  color: #000000;
+  background-color: #FFFFFF;
+  }
+
+  
 /*******************************************************/
 
 .footer {
@@ -95,12 +141,11 @@
 
 .footer .footer-right a{
 	display: inline-block;
-	width: 25px;
-	height: 25px;
-	background-color:  #33383b;
-	border-radius: 2px;
-	font-size: 20px;
-	text-align: center;
 	line-height: 25px;
 	margin-left: 10px;
+}
+
+.footer .footer-right img{
+	width: 25px;
+	height: 25px;
 }
